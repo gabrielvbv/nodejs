@@ -37,10 +37,27 @@ function crescente() {
     if (cre < 5) {
         document.getElementById("escada").innerHTML = (cre + 1);
     } else {
-        document.getElementById("escada").innerHTML = "finish!"
+        document.getElementById("escada").innerHTML = "finish!";
     }
 }
 
 
-
+//função para fazer uma ação de acordo com um input na página
+function withInput() {
+    //obtendo o conteúdo da caixa de texto com .value, para pegar o conteúdo como texto
+    var inp = document.getElementById("texto").value;
+    switch (inp) {
+        case "1":
+            document.getElementById("resultado").innerHTML = "Primeiro!";
+            break;
+        case "2":
+            document.getElementById("resultado").innerHTML = "Segundo!";
+            break;
+        case "3":
+            document.getElementById("resultado").innerHTML = "Terceiro!";
+            break;
+        default:
+            document.getElementById("resultado").innerHTML = "Não foi dessa vez ¯\_(ツ)_/¯";
+    }
+}
 
