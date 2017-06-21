@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hello, again...</title>
+        <script>
+            //função funcao() para mudar o conteúdo de um objeto com ID="demo" para "Hello World!"
+            function funcao() {
+                document.getElementById("demo").innerHTML = "Hello World!";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Cabeçalho da página</h1>
+        <p id="demo">Um parágrafo</p>
+        <!-- chama a função funcao() no clique do botão -->
+        <button type="button" onclick="funcao()">Change!</button>
+        <p></p>
+        <!-- também dá pra usar funções dentro do html sem a tag script,
+        como por exemplo na função onclick do botão.
+        Obs: document.write sobrepõe todo o conteúdo da página, não se usa na prática, só pra testes -->
+        <button onclick="document.write('It works!')">document.write</button>
+        <p></p>
+        <button onclick="window.alert('IT WORKS EVEN BETTER!')">window.alert</button>
+
+        <script>
+            //aqui ele loga no terminal do navegaor (f12) a mensagem
+            console.log ("logando no terminal");
+        </script>
+    </body>
+</html>
