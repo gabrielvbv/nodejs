@@ -1,9 +1,9 @@
 <html>
     <head>
-        
+        <title>Working with external js</title>
     </head>
     <body>
-        <!-- insere o script .js externo, de outro arquivo.
+        <!-- abaixo insere o script .js externo, de outro arquivo.
         Se tivesse em outra pasta daria pra colocar o caminho, por exemplo folder/external.js
         ou mesmo voltando pastas, ../external.js -->
         <script src="external.js"></script>
@@ -25,6 +25,18 @@
         <p><input id="logi2" type="text"></p>
         <p id="outputis">a</p>
         <button onclick="logics()">and/or</button>
+<!--
+        <p>
+            <input id="par1" type="text">
+            <input id="par2" type="text">
+        </p>
+        <p id="outParam">.</p>
+        <button onclick="paramis(document.getElementById('par1').value, document.getElementById('par2').value)">Parametro</button>
+        //<button onclick="paramis(document.getElementById('par1').value)">Parametro</button>
+-->
+        <p>Fatorial de: <input type="text" id="fat"></p>
+        <p id="fatFin">.</p>
+        <button onclick="fatorial()">Fatorial</button>
 
     </body>
 </html>

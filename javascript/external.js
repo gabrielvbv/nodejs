@@ -83,3 +83,31 @@ function logics() {
         }
     }
 }
+
+
+
+/*
+//função com entrada de parâmetros
+//var param1 = parseInt(document.getElementById("par1").value);
+//var param2 = parseInt(document.getElementById("par2").value);
+function paramis(param1, param2) {
+    param1 = parseInt(param1);
+    param2 = parseInt(param2);
+    console.log(param1);
+    document.getElementById("outParam").innerHTML = (param1 + param2);
+}
+
+*/
+
+
+
+
+function fatorial() {
+    var n = document.getElementById("fat").value;
+    var f = n;
+    for (i = (n - 1); i > 0; i--) {
+        console.log(i);
+        f = f * i;
+    }
+    document.getElementById("fatFin").innerHTML = f;
+}
